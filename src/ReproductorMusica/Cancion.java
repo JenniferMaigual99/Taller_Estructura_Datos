@@ -34,5 +34,16 @@ public class Cancion {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " duracion='" + getDuracion() + "'" +
+            ", autor='" + getAutor() + "'" +
+            ", titulo='" + getTitulo() + "'" +
+            "}";
+    }
+
 }
 
