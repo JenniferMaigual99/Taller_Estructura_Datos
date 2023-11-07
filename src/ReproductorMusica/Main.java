@@ -20,9 +20,9 @@ public class Main {
         musica.agregarCancion(new Cancion(150, "Manuel4", "La vaca lola4"));
 
         while (option!=-1) {
-            System.out.println("1. Agreda cancion");
+            System.out.println("1. Agregar cancion");
             System.out.println("2. Reproduce cancion");
-            System.out.println("1. Elimina cancion");
+            System.out.println("3. Elimina cancion");
             System.out.print("Ingrese seleccion: ");
             option = inSc.nextInt();
             switch (option) {
@@ -42,8 +42,9 @@ public class Main {
                     musica.reproducirCancion();
                     break;
                 case 3:
+                    inSc.nextLine();
                     System.out.println("Título de la canción a eliminar: ");
-                    titulo = inSc.next();
+                    titulo = inSc.nextLine();
                     musica.eliminarCanción(titulo);
                     break;
                 default:
